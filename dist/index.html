@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elieth Amador | Portafolio</title>
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="navbar">
+        <a class="logo" href="#inicio">Elieth<span>.</span></a>
+        <div class="menu">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="tag">Portafolio personal</p>
+          <h1>Hola, soy <span>Elieth Viviana Amador Laínez</span></h1>
+          <p class="subtitle">Estudiante de Ingeniería en Sistemas</p>
+          <p>
+            Me interesa la programación, el desarrollo web, las bases de datos y el análisis de sistemas.
+            Busco crear soluciones funcionales que ayuden a resolver necesidades reales.
+          </p>
+          <div class="buttons">
+            <a class="btn primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn secondary" href="#contacto">Contactarme</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="./img/foto.jpg" alt="Foto de Elieth Amador" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+          Mi nombre es Elieth Amador, tengo 19 años y actualmente curso el cuarto año de la carrera de
+          Ingeniería en Sistemas. Durante mi formación he aprendido sobre programación, desarrollo de páginas web,
+          bases de datos y análisis de sistemas.
+        </p>
+        <p>
+          Me considero una persona responsable, creativa y con muchas ganas de seguir aprendiendo. Mi objetivo es
+          fortalecer mis conocimientos para desarrollar sistemas útiles, ordenados y fáciles de usar.
+        </p>
+      </section>
+
+      <section class="section light" id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Desarrollo web</h3>
+            <p>Creación de páginas web usando HTML, CSS, JavaScript y herramientas modernas como Vite.</p>
+          </article>
+          <article class="card">
+            <h3>Bases de datos</h3>
+            <p>Diseño, organización y administración de datos para manejar información de forma eficiente.</p>
+          </article>
+          <article class="card">
+            <h3>Análisis de sistemas</h3>
+            <p>Identificación de necesidades de una empresa para transformarlas en soluciones tecnológicas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="proyectos">
+        <h2>Mis proyectos</h2>
+        <div class="project">
+          <img src="./img/proyectodesarrollo.png" alt="Imagen de proyecto de desarrollo" />
+          <div>
+            <h3>Proyecto de desarrollo</h3>
+            <p>
+              Proyecto académico enfocado en aplicar conocimientos de programación, análisis y diseño de soluciones.
+              Este trabajo representa mi avance en el desarrollo de sistemas y páginas web.
+            </p>
+            <a class="project-link" href="https://github.com/Elieth-Amador" target="_blank" rel="noopener">Ver GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light" id="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-box">
+          <p>Completa el formulario para enviarme un mensaje.</p>
+          <form id="contactForm">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="tucorreo@email.com" />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+            <p id="formMessage" class="form-message"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>2026 © Elieth Amador | Portafolio desarrollado con Vite y LESS</p>
+    </footer>
+
+    <script type="module" crossorigin src="./assets/main.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main.css">
+  </body>
+</html>
