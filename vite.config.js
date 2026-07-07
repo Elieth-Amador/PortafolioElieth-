@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite';
-import purgecss from '@fullhuman/postcss-purgecss';
+import purgecssModule from '@fullhuman/postcss-purgecss';
+
+const purgecss = purgecssModule.default || purgecssModule;
 
 export default defineConfig({
   base: './',
@@ -7,8 +9,18 @@ export default defineConfig({
     postcss: {
       plugins: [
         purgecss({
-          content: ['./index.html', './src/**/*.js'],
-          safelist: ['error', 'success', 'active']
+          content: [
+            './index.html',
+            './src/**/*.js',
+            './src/**/*.html'
+          ],
+          safelist: [
+            'error',
+            'success',
+            'active',
+            'show',
+            'hidden'
+          ]
         })
       ]
     }
