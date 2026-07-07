@@ -6,9 +6,9 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        purgecss.default({
+        purgecss({
           content: ['./index.html', './src/**/*.js'],
-          safelist: ['error', 'success']
+          safelist: ['error', 'success', 'active']
         })
       ]
     }
